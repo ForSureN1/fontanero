@@ -2,8 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // sliders
     $('.hero__slider').slick({
+        autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplaySpeed: 1500,
         fade: true,
         arrows: true,
         dots: true,
@@ -21,40 +23,84 @@ document.addEventListener('DOMContentLoaded', () => {
         autoplay: true,
         slidesToShow: 7,
         slidesToScroll: 1,
+        autoplaySpeed: 1500,
         arrows: true,
-        nextArrow: '<button type="button" class="slick_arrow slick_next"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="20" fill="#D3D3D3" fill-opacity="0.32"/><g clip-path="url(#clip0_148_1211)"><path d="M14.0099 12.3583L22.3225 20L14.0099 27.6417C14.0099 27.6417 13.8558 28.3333 14.7623 29.1667C15.6688 30 16.5753 30 16.5753 30L26.5468 20.8333C26.5468 20.8333 27 20.4167 27 20C27 19.5833 26.5468 19.1667 26.5468 19.1667L16.5753 10C16.5753 10 15.6688 10 14.7623 10.8333C13.8558 11.6667 14.0099 12.3583 14.0099 12.3583Z" fill="black" fill-opacity="1"/></g><defs><clipPath id="clip0_148_1211"><rect width="20" height="20" fill="white" transform="translate(30 10) rotate(90)"/></clipPath></defs></svg></button>',
-        prevArrow: '<button type="button" class="slick_arrow slick_prev"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="20" fill="#D3D3D3" fill-opacity="0.32"/><g clip-path="url(#clip0_148_1211)"><path d="M14.0099 12.3583L22.3225 20L14.0099 27.6417C14.0099 27.6417 13.8558 28.3333 14.7623 29.1667C15.6688 30 16.5753 30 16.5753 30L26.5468 20.8333C26.5468 20.8333 27 20.4167 27 20C27 19.5833 26.5468 19.1667 26.5468 19.1667L16.5753 10C16.5753 10 15.6688 10 14.7623 10.8333C13.8558 11.6667 14.0099 12.3583 14.0099 12.3583Z" fill="black" fill-opacity="1"/></g><defs><clipPath id="clip0_148_1211"><rect width="20" height="20" fill="white" transform="translate(30 10) rotate(90)"/></clipPath></defs></svg></button>',
+        nextArrow: '<button type="button" class="slick_arrow slick_next"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="20" fill="#fff" fill-opacity="1"/><g clip-path="url(#clip0_148_1211)"><path d="M14.0099 12.3583L22.3225 20L14.0099 27.6417C14.0099 27.6417 13.8558 28.3333 14.7623 29.1667C15.6688 30 16.5753 30 16.5753 30L26.5468 20.8333C26.5468 20.8333 27 20.4167 27 20C27 19.5833 26.5468 19.1667 26.5468 19.1667L16.5753 10C16.5753 10 15.6688 10 14.7623 10.8333C13.8558 11.6667 14.0099 12.3583 14.0099 12.3583Z" fill="black" fill-opacity="1"/></g><defs><clipPath id="clip0_148_1211"><rect width="20" height="20" fill="white" transform="translate(30 10) rotate(90)"/></clipPath></defs></svg></button>',
+        prevArrow: '<button type="button" class="slick_arrow slick_prev"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="20" fill="#fff" fill-opacity="1"/><g clip-path="url(#clip0_148_1211)"><path d="M14.0099 12.3583L22.3225 20L14.0099 27.6417C14.0099 27.6417 13.8558 28.3333 14.7623 29.1667C15.6688 30 16.5753 30 16.5753 30L26.5468 20.8333C26.5468 20.8333 27 20.4167 27 20C27 19.5833 26.5468 19.1667 26.5468 19.1667L16.5753 10C16.5753 10 15.6688 10 14.7623 10.8333C13.8558 11.6667 14.0099 12.3583 14.0099 12.3583Z" fill="black" fill-opacity="1"/></g><defs><clipPath id="clip0_148_1211"><rect width="20" height="20" fill="white" transform="translate(30 10) rotate(90)"/></clipPath></defs></svg></button>',
         pauseOnFocus: false,
         pauseOnHover: false,
         responsive: [{
-                breakpoint: 1400,
+                breakpoint: 1401,
                 settings: {
                     slidesToShow: 6,
                 }
             },
             {
-                breakpoint: 1300,
+                breakpoint: 1301,
                 settings: {
                     slidesToShow: 5,
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 769,
                 settings: {
                     slidesToShow: 4,
                 }
             },
             {
-                breakpoint: 576,
+                breakpoint: 577,
                 settings: {
                     slidesToShow: 3,
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 481,
                 settings: {
                     slidesToShow: 3,
                     arrows: false,
+                }
+            }
+        ]
+    });
+
+    $('.popular__slider').slick({
+        autoplay: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplaySpeed: 1500,
+        arrows: true,
+        nextArrow: '<button type="button" class="slick_arrow slick_next"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="20" fill="#fff" fill-opacity="1"/><g clip-path="url(#clip0_148_1211)"><path d="M14.0099 12.3583L22.3225 20L14.0099 27.6417C14.0099 27.6417 13.8558 28.3333 14.7623 29.1667C15.6688 30 16.5753 30 16.5753 30L26.5468 20.8333C26.5468 20.8333 27 20.4167 27 20C27 19.5833 26.5468 19.1667 26.5468 19.1667L16.5753 10C16.5753 10 15.6688 10 14.7623 10.8333C13.8558 11.6667 14.0099 12.3583 14.0099 12.3583Z" fill="black" fill-opacity="1"/></g><defs><clipPath id="clip0_148_1211"><rect width="20" height="20" fill="white" transform="translate(30 10) rotate(90)"/></clipPath></defs></svg></button>',
+        prevArrow: '<button type="button" class="slick_arrow slick_prev"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="20" fill="#fff" fill-opacity="1"/><g clip-path="url(#clip0_148_1211)"><path d="M14.0099 12.3583L22.3225 20L14.0099 27.6417C14.0099 27.6417 13.8558 28.3333 14.7623 29.1667C15.6688 30 16.5753 30 16.5753 30L26.5468 20.8333C26.5468 20.8333 27 20.4167 27 20C27 19.5833 26.5468 19.1667 26.5468 19.1667L16.5753 10C16.5753 10 15.6688 10 14.7623 10.8333C13.8558 11.6667 14.0099 12.3583 14.0099 12.3583Z" fill="black" fill-opacity="1"/></g><defs><clipPath id="clip0_148_1211"><rect width="20" height="20" fill="white" transform="translate(30 10) rotate(90)"/></clipPath></defs></svg></button>',
+        pauseOnFocus: false,
+        pauseOnHover: true,
+        responsive: [{
+                breakpoint: 1401,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
+            {
+                breakpoint: 1301,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 577,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 481,
+                settings: {
+                    slidesToShow: 2,
                 }
             }
         ]
