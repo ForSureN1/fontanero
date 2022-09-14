@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <title>Главная</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css?_v=20220907172427">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css?_v=20220907172427">
-    <link rel="stylesheet" href="css/style.css?_v=20220907172427">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css?_v=20220914114113">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css?_v=20220914114113">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css?_v=20220914114113" />
+    <link rel="stylesheet" href="css/style.css?_v=20220914114113">
 </head>
 
 <body>
@@ -46,9 +47,9 @@
             </a>
             <div class="header__catalog">
                 <a href="javascript:;" class="header__catalog-btn"><span>Каталог товаров</span></a>
-                <div class="catalog">
-                    <ul class="catalog__list">
-                        <li class="catalog__list-item" data-id="1">Ванны
+                <div class="catalog-header">
+                    <ul class="catalog-header__list">
+                        <li class="catalog-header__list-item" data-id="1">Ванны
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_277_2474)">
                                 <path d="M6.00611 5.415L11.1215 10L6.00611 14.585C6.00611 14.585 5.91127 15 6.46912 15.5C7.02696 16 7.5848 16 7.5848 16L13.7211 10.5C13.7211 10.5 14 10.25 14 10C14 9.75 13.7211 9.5 13.7211 9.5L7.5848 4C7.5848 4 7.02696 4 6.46912 4.5C5.91127 5 6.00611 5.415 6.00611 5.415Z" fill="#64849B"/>
@@ -60,7 +61,7 @@
                                 </defs>
                             </svg>
                         </li>
-                        <li class="catalog__list-item" data-id="2">Мебель для ванных комнат
+                        <li class="catalog-header__list-item" data-id="2">Мебель для ванных комнат
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_277_2474)">
                                 <path d="M6.00611 5.415L11.1215 10L6.00611 14.585C6.00611 14.585 5.91127 15 6.46912 15.5C7.02696 16 7.5848 16 7.5848 16L13.7211 10.5C13.7211 10.5 14 10.25 14 10C14 9.75 13.7211 9.5 13.7211 9.5L7.5848 4C7.5848 4 7.02696 4 6.46912 4.5C5.91127 5 6.00611 5.415 6.00611 5.415Z" fill="#64849B"/>
@@ -72,7 +73,7 @@
                                 </defs>
                             </svg>
                         </li>
-                        <li class="catalog__list-item" data-id="3">Душевые кабины и ограждения
+                        <li class="catalog-header__list-item" data-id="3">Душевые кабины и ограждения
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_277_2474)">
                                 <path d="M6.00611 5.415L11.1215 10L6.00611 14.585C6.00611 14.585 5.91127 15 6.46912 15.5C7.02696 16 7.5848 16 7.5848 16L13.7211 10.5C13.7211 10.5 14 10.25 14 10C14 9.75 13.7211 9.5 13.7211 9.5L7.5848 4C7.5848 4 7.02696 4 6.46912 4.5C5.91127 5 6.00611 5.415 6.00611 5.415Z" fill="#64849B"/>
@@ -84,7 +85,7 @@
                                 </defs>
                             </svg>
                         </li>
-                        <li class="catalog__list-item" data-id="4">Трапы
+                        <li class="catalog-header__list-item" data-id="4">Трапы
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_277_2474)">
                                 <path d="M6.00611 5.415L11.1215 10L6.00611 14.585C6.00611 14.585 5.91127 15 6.46912 15.5C7.02696 16 7.5848 16 7.5848 16L13.7211 10.5C13.7211 10.5 14 10.25 14 10C14 9.75 13.7211 9.5 13.7211 9.5L7.5848 4C7.5848 4 7.02696 4 6.46912 4.5C5.91127 5 6.00611 5.415 6.00611 5.415Z" fill="#64849B"/>
@@ -96,7 +97,7 @@
                                 </defs>
                             </svg>
                         </li>
-                        <li class="catalog__list-item" data-id="5">Кухомойные мойки
+                        <li class="catalog-header__list-item" data-id="5">Кухомойные мойки
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_277_2474)">
                                 <path d="M6.00611 5.415L11.1215 10L6.00611 14.585C6.00611 14.585 5.91127 15 6.46912 15.5C7.02696 16 7.5848 16 7.5848 16L13.7211 10.5C13.7211 10.5 14 10.25 14 10C14 9.75 13.7211 9.5 13.7211 9.5L7.5848 4C7.5848 4 7.02696 4 6.46912 4.5C5.91127 5 6.00611 5.415 6.00611 5.415Z" fill="#64849B"/>
@@ -108,7 +109,7 @@
                                 </defs>
                             </svg>
                         </li>
-                        <li class="catalog__list-item" data-id="6">Зеркала для ванной комнаты
+                        <li class="catalog-header__list-item" data-id="6">Зеркала для ванной комнаты
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_277_2474)">
                                 <path d="M6.00611 5.415L11.1215 10L6.00611 14.585C6.00611 14.585 5.91127 15 6.46912 15.5C7.02696 16 7.5848 16 7.5848 16L13.7211 10.5C13.7211 10.5 14 10.25 14 10C14 9.75 13.7211 9.5 13.7211 9.5L7.5848 4C7.5848 4 7.02696 4 6.46912 4.5C5.91127 5 6.00611 5.415 6.00611 5.415Z" fill="#64849B"/>
@@ -120,7 +121,7 @@
                                 </defs>
                             </svg>
                         </li>
-                        <li class="catalog__list-item" data-id="7">Унитазы и биде
+                        <li class="catalog-header__list-item" data-id="7">Унитазы и биде
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_277_2474)">
                                 <path d="M6.00611 5.415L11.1215 10L6.00611 14.585C6.00611 14.585 5.91127 15 6.46912 15.5C7.02696 16 7.5848 16 7.5848 16L13.7211 10.5C13.7211 10.5 14 10.25 14 10C14 9.75 13.7211 9.5 13.7211 9.5L7.5848 4C7.5848 4 7.02696 4 6.46912 4.5C5.91127 5 6.00611 5.415 6.00611 5.415Z" fill="#64849B"/>
@@ -132,7 +133,7 @@
                                 </defs>
                             </svg>
                         </li>
-                        <li class="catalog__list-item" data-id="8">Раковины и пъедистал
+                        <li class="catalog-header__list-item" data-id="8">Раковины и пъедистал
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_277_2474)">
                                 <path d="M6.00611 5.415L11.1215 10L6.00611 14.585C6.00611 14.585 5.91127 15 6.46912 15.5C7.02696 16 7.5848 16 7.5848 16L13.7211 10.5C13.7211 10.5 14 10.25 14 10C14 9.75 13.7211 9.5 13.7211 9.5L7.5848 4C7.5848 4 7.02696 4 6.46912 4.5C5.91127 5 6.00611 5.415 6.00611 5.415Z" fill="#64849B"/>
@@ -144,7 +145,7 @@
                                 </defs>
                             </svg>
                         </li>
-                        <li class="catalog__list-item" data-id="9">Инсталляции для подвесных унитазов
+                        <li class="catalog-header__list-item" data-id="9">Инсталляции для подвесных унитазов
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_277_2474)">
                                 <path d="M6.00611 5.415L11.1215 10L6.00611 14.585C6.00611 14.585 5.91127 15 6.46912 15.5C7.02696 16 7.5848 16 7.5848 16L13.7211 10.5C13.7211 10.5 14 10.25 14 10C14 9.75 13.7211 9.5 13.7211 9.5L7.5848 4C7.5848 4 7.02696 4 6.46912 4.5C5.91127 5 6.00611 5.415 6.00611 5.415Z" fill="#64849B"/>
@@ -156,7 +157,7 @@
                                 </defs>
                             </svg>
                         </li>
-                        <li class="catalog__list-item" data-id="10">Сифоны, шланги и комплектующие
+                        <li class="catalog-header__list-item" data-id="10">Сифоны, шланги и комплектующие
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_277_2474)">
                                 <path d="M6.00611 5.415L11.1215 10L6.00611 14.585C6.00611 14.585 5.91127 15 6.46912 15.5C7.02696 16 7.5848 16 7.5848 16L13.7211 10.5C13.7211 10.5 14 10.25 14 10C14 9.75 13.7211 9.5 13.7211 9.5L7.5848 4C7.5848 4 7.02696 4 6.46912 4.5C5.91127 5 6.00611 5.415 6.00611 5.415Z" fill="#64849B"/>
@@ -168,7 +169,7 @@
                                 </defs>
                             </svg>
                         </li>
-                        <li class="catalog__list-item" data-id="11">Люки, ревизионные и решетки
+                        <li class="catalog-header__list-item" data-id="11">Люки, ревизионные и решетки
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_277_2474)">
                                 <path d="M6.00611 5.415L11.1215 10L6.00611 14.585C6.00611 14.585 5.91127 15 6.46912 15.5C7.02696 16 7.5848 16 7.5848 16L13.7211 10.5C13.7211 10.5 14 10.25 14 10C14 9.75 13.7211 9.5 13.7211 9.5L7.5848 4C7.5848 4 7.02696 4 6.46912 4.5C5.91127 5 6.00611 5.415 6.00611 5.415Z" fill="#64849B"/>
@@ -180,7 +181,7 @@
                                 </defs>
                             </svg>
                         </li>
-                        <li class="catalog__list-item" data-id="12">Акксесуары для ванной комнаты
+                        <li class="catalog-header__list-item" data-id="12">Акксесуары для ванной комнаты
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_277_2474)">
                                 <path d="M6.00611 5.415L11.1215 10L6.00611 14.585C6.00611 14.585 5.91127 15 6.46912 15.5C7.02696 16 7.5848 16 7.5848 16L13.7211 10.5C13.7211 10.5 14 10.25 14 10C14 9.75 13.7211 9.5 13.7211 9.5L7.5848 4C7.5848 4 7.02696 4 6.46912 4.5C5.91127 5 6.00611 5.415 6.00611 5.415Z" fill="#64849B"/>
@@ -192,7 +193,7 @@
                                 </defs>
                             </svg>
                         </li>
-                        <li class="catalog__list-item" data-id="13">Карнизы для ванн
+                        <li class="catalog-header__list-item" data-id="13">Карнизы для ванн
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_277_2474)">
                                 <path d="M6.00611 5.415L11.1215 10L6.00611 14.585C6.00611 14.585 5.91127 15 6.46912 15.5C7.02696 16 7.5848 16 7.5848 16L13.7211 10.5C13.7211 10.5 14 10.25 14 10C14 9.75 13.7211 9.5 13.7211 9.5L7.5848 4C7.5848 4 7.02696 4 6.46912 4.5C5.91127 5 6.00611 5.415 6.00611 5.415Z" fill="#64849B"/>
@@ -204,7 +205,7 @@
                                 </defs>
                             </svg>
                         </li>
-                        <li class="catalog__list-item" data-id="14">Счетчики
+                        <li class="catalog-header__list-item" data-id="14">Счетчики
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_277_2474)">
                                 <path d="M6.00611 5.415L11.1215 10L6.00611 14.585C6.00611 14.585 5.91127 15 6.46912 15.5C7.02696 16 7.5848 16 7.5848 16L13.7211 10.5C13.7211 10.5 14 10.25 14 10C14 9.75 13.7211 9.5 13.7211 9.5L7.5848 4C7.5848 4 7.02696 4 6.46912 4.5C5.91127 5 6.00611 5.415 6.00611 5.415Z" fill="#64849B"/>
@@ -216,7 +217,7 @@
                                 </defs>
                             </svg>
                         </li>
-                        <li class="catalog__list-item" data-id="15">Полотенцесушители
+                        <li class="catalog-header__list-item" data-id="15">Полотенцесушители
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_277_2474)">
                                 <path d="M6.00611 5.415L11.1215 10L6.00611 14.585C6.00611 14.585 5.91127 15 6.46912 15.5C7.02696 16 7.5848 16 7.5848 16L13.7211 10.5C13.7211 10.5 14 10.25 14 10C14 9.75 13.7211 9.5 13.7211 9.5L7.5848 4C7.5848 4 7.02696 4 6.46912 4.5C5.91127 5 6.00611 5.415 6.00611 5.415Z" fill="#64849B"/>
@@ -229,185 +230,185 @@
                             </svg>
                         </li>
                     </ul>
-                    <div class="catalog__items">
-                        <div class="catalog__items-back">Назад</div>
-                        <a href="#" class="catalog__item" data-id="1">
-                            <div class="catalog__item-title">Акриловые ванны</div>
-                            <div class="catalog__item-count">
+                    <div class="catalog-header__items">
+                        <div class="catalog-header__items-back">Назад</div>
+                        <a href="#" class="catalog-header__item" data-id="1">
+                            <div class="catalog-header__item-title">Акриловые ванны</div>
+                            <div class="catalog-header__item-count">
                                 <span>152</span>товаров
                             </div>
-                            <div class="catalog__item-img">
+                            <div class="catalog-header__item-img">
                                 <img src="img/catalog-item.png" alt="Акриловые ванны">
                             </div>
                         </a>
-                        <a href="#" class="catalog__item" data-id="2">
-                            <div class="catalog__item-title">Стальные ванны</div>
-                            <div class="catalog__item-count">
+                        <a href="#" class="catalog-header__item" data-id="2">
+                            <div class="catalog-header__item-title">Стальные ванны</div>
+                            <div class="catalog-header__item-count">
                                 <span>152</span>товаров
                             </div>
-                            <div class="catalog__item-img">
+                            <div class="catalog-header__item-img">
                                 <img src="img/catalog-item2.png" alt="Стальные ванны">
                             </div>
                         </a>
-                        <a href="#" class="catalog__item" data-id="3">
-                            <div class="catalog__item-title">Ванны из сантехнического акрила АБС/ПММА</div>
-                            <div class="catalog__item-count">
+                        <a href="#" class="catalog-header__item" data-id="3">
+                            <div class="catalog-header__item-title">Ванны из сантехнического акрила АБС/ПММА</div>
+                            <div class="catalog-header__item-count">
                                 <span>152</span>товаров
                             </div>
-                            <div class="catalog__item-img">
+                            <div class="catalog-header__item-img">
                                 <img src="img/catalog-item3.png" alt="Ванны из сантехнического акрила АБС/ПММА">
                             </div>
                         </a>
-                        <a href="#" class="catalog__item" data-id="4">
-                            <div class="catalog__item-title">Чугунные ванны</div>
-                            <div class="catalog__item-count">
+                        <a href="#" class="catalog-header__item" data-id="4">
+                            <div class="catalog-header__item-title">Чугунные ванны</div>
+                            <div class="catalog-header__item-count">
                                 <span>152</span>товаров
                             </div>
-                            <div class="catalog__item-img">
+                            <div class="catalog-header__item-img">
                                 <img src="img/catalog-item.png" alt="Чугунные ванны">
                             </div>
                         </a>
-                        <a href="#" class="catalog__item" data-id="5">
-                            <div class="catalog__item-title">Акриловые ванны</div>
-                            <div class="catalog__item-count">
+                        <a href="#" class="catalog-header__item" data-id="5">
+                            <div class="catalog-header__item-title">Акриловые ванны</div>
+                            <div class="catalog-header__item-count">
                                 <span>152</span>товаров
                             </div>
-                            <div class="catalog__item-img">
+                            <div class="catalog-header__item-img">
                                 <img src="img/catalog-item.png" alt="Акриловые ванны">
                             </div>
                         </a>
-                        <a href="#" class="catalog__item" data-id="6">
-                            <div class="catalog__item-title">Стальные ванны</div>
-                            <div class="catalog__item-count">
+                        <a href="#" class="catalog-header__item" data-id="6">
+                            <div class="catalog-header__item-title">Стальные ванны</div>
+                            <div class="catalog-header__item-count">
                                 <span>152</span>товаров
                             </div>
-                            <div class="catalog__item-img">
+                            <div class="catalog-header__item-img">
                                 <img src="img/catalog-item2.png" alt="Стальные ванны">
                             </div>
                         </a>
-                        <a href="#" class="catalog__item" data-id="7">
-                            <div class="catalog__item-title">Ванны из сантехнического акрила АБС/ПММА</div>
-                            <div class="catalog__item-count">
+                        <a href="#" class="catalog-header__item" data-id="7">
+                            <div class="catalog-header__item-title">Ванны из сантехнического акрила АБС/ПММА</div>
+                            <div class="catalog-header__item-count">
                                 <span>152</span>товаров
                             </div>
-                            <div class="catalog__item-img">
+                            <div class="catalog-header__item-img">
                                 <img src="img/catalog-item3.png" alt="Ванны из сантехнического акрила АБС/ПММА">
                             </div>
                         </a>
-                        <a href="#" class="catalog__item" data-id="8">
-                            <div class="catalog__item-title">Чугунные ванны</div>
-                            <div class="catalog__item-count">
+                        <a href="#" class="catalog-header__item" data-id="8">
+                            <div class="catalog-header__item-title">Чугунные ванны</div>
+                            <div class="catalog-header__item-count">
                                 <span>152</span>товаров
                             </div>
-                            <div class="catalog__item-img">
+                            <div class="catalog-header__item-img">
                                 <img src="img/catalog-item.png" alt="Чугунные ванны">
                             </div>
                         </a>
-                        <a href="#" class="catalog__item" data-id="9">
-                            <div class="catalog__item-title">Акриловые ванны</div>
-                            <div class="catalog__item-count">
+                        <a href="#" class="catalog-header__item" data-id="9">
+                            <div class="catalog-header__item-title">Акриловые ванны</div>
+                            <div class="catalog-header__item-count">
                                 <span>152</span>товаров
                             </div>
-                            <div class="catalog__item-img">
+                            <div class="catalog-header__item-img">
                                 <img src="img/catalog-item.png" alt="Акриловые ванны">
                             </div>
                         </a>
-                        <a href="#" class="catalog__item" data-id="10">
-                            <div class="catalog__item-title">Стальные ванны</div>
-                            <div class="catalog__item-count">
+                        <a href="#" class="catalog-header__item" data-id="10">
+                            <div class="catalog-header__item-title">Стальные ванны</div>
+                            <div class="catalog-header__item-count">
                                 <span>152</span>товаров
                             </div>
-                            <div class="catalog__item-img">
+                            <div class="catalog-header__item-img">
                                 <img src="img/catalog-item2.png" alt="Стальные ванны">
                             </div>
                         </a>
-                        <a href="#" class="catalog__item" data-id="11">
-                            <div class="catalog__item-title">Ванны из сантехнического акрила АБС/ПММА</div>
-                            <div class="catalog__item-count">
+                        <a href="#" class="catalog-header__item" data-id="11">
+                            <div class="catalog-header__item-title">Ванны из сантехнического акрила АБС/ПММА</div>
+                            <div class="catalog-header__item-count">
                                 <span>152</span>товаров
                             </div>
-                            <div class="catalog__item-img">
+                            <div class="catalog-header__item-img">
                                 <img src="img/catalog-item3.png" alt="Ванны из сантехнического акрила АБС/ПММА">
                             </div>
                         </a>
-                        <a href="#" class="catalog__item" data-id="12">
-                            <div class="catalog__item-title">Чугунные ванны</div>
-                            <div class="catalog__item-count">
+                        <a href="#" class="catalog-header__item" data-id="12">
+                            <div class="catalog-header__item-title">Чугунные ванны</div>
+                            <div class="catalog-header__item-count">
                                 <span>152</span>товаров
                             </div>
-                            <div class="catalog__item-img">
+                            <div class="catalog-header__item-img">
                                 <img src="img/catalog-item.png" alt="Чугунные ванны">
                             </div>
                         </a>
-                        <a href="#" class="catalog__item" data-id="13">
-                            <div class="catalog__item-title">Акриловые ванны</div>
-                            <div class="catalog__item-count">
+                        <a href="#" class="catalog-header__item" data-id="13">
+                            <div class="catalog-header__item-title">Акриловые ванны</div>
+                            <div class="catalog-header__item-count">
                                 <span>152</span>товаров
                             </div>
-                            <div class="catalog__item-img">
+                            <div class="catalog-header__item-img">
                                 <img src="img/catalog-item.png" alt="Акриловые ванны">
                             </div>
                         </a>
-                        <a href="#" class="catalog__item" data-id="14">
-                            <div class="catalog__item-title">Стальные ванны</div>
-                            <div class="catalog__item-count">
+                        <a href="#" class="catalog-header__item" data-id="14">
+                            <div class="catalog-header__item-title">Стальные ванны</div>
+                            <div class="catalog-header__item-count">
                                 <span>152</span>товаров
                             </div>
-                            <div class="catalog__item-img">
+                            <div class="catalog-header__item-img">
                                 <img src="img/catalog-item2.png" alt="Стальные ванны">
                             </div>
                         </a>
-                        <a href="#" class="catalog__item" data-id="15">
-                            <div class="catalog__item-title">Ванны из сантехнического акрила АБС/ПММА</div>
-                            <div class="catalog__item-count">
+                        <a href="#" class="catalog-header__item" data-id="15">
+                            <div class="catalog-header__item-title">Ванны из сантехнического акрила АБС/ПММА</div>
+                            <div class="catalog-header__item-count">
                                 <span>152</span>товаров
                             </div>
-                            <div class="catalog__item-img">
+                            <div class="catalog-header__item-img">
                                 <img src="img/catalog-item3.png" alt="Ванны из сантехнического акрила АБС/ПММА">
                             </div>
                         </a>
-                        <a href="#" class="catalog__item" data-id="15">
-                            <div class="catalog__item-title">Чугунные ванны</div>
-                            <div class="catalog__item-count">
+                        <a href="#" class="catalog-header__item" data-id="15">
+                            <div class="catalog-header__item-title">Чугунные ванны</div>
+                            <div class="catalog-header__item-count">
                                 <span>152</span>товаров
                             </div>
-                            <div class="catalog__item-img">
+                            <div class="catalog-header__item-img">
                                 <img src="img/catalog-item.png" alt="Чугунные ванны">
                             </div>
                         </a>
-                        <a href="#" class="catalog__item" data-id="15">
-                            <div class="catalog__item-title">Акриловые ванны</div>
-                            <div class="catalog__item-count">
+                        <a href="#" class="catalog-header__item" data-id="15">
+                            <div class="catalog-header__item-title">Акриловые ванны</div>
+                            <div class="catalog-header__item-count">
                                 <span>152</span>товаров
                             </div>
-                            <div class="catalog__item-img">
+                            <div class="catalog-header__item-img">
                                 <img src="img/catalog-item.png" alt="Акриловые ванны">
                             </div>
                         </a>
-                        <a href="#" class="catalog__item" data-id="15">
-                            <div class="catalog__item-title">Стальные ванны</div>
-                            <div class="catalog__item-count">
+                        <a href="#" class="catalog-header__item" data-id="15">
+                            <div class="catalog-header__item-title">Стальные ванны</div>
+                            <div class="catalog-header__item-count">
                                 <span>152</span>товаров
                             </div>
-                            <div class="catalog__item-img">
+                            <div class="catalog-header__item-img">
                                 <img src="img/catalog-item2.png" alt="Стальные ванны">
                             </div>
                         </a>
-                        <a href="#" class="catalog__item" data-id="15">
-                            <div class="catalog__item-title">Ванны из сантехнического акрила АБС/ПММА</div>
-                            <div class="catalog__item-count">
+                        <a href="#" class="catalog-header__item" data-id="15">
+                            <div class="catalog-header__item-title">Ванны из сантехнического акрила АБС/ПММА</div>
+                            <div class="catalog-header__item-count">
                                 <span>152</span>товаров
                             </div>
-                            <div class="catalog__item-img">
+                            <div class="catalog-header__item-img">
                                 <img src="img/catalog-item3.png" alt="Ванны из сантехнического акрила АБС/ПММА">
                             </div>
                         </a>
-                        <a href="#" class="catalog__item" data-id="15">
-                            <div class="catalog__item-title">Чугунные ванны</div>
-                            <div class="catalog__item-count">
+                        <a href="#" class="catalog-header__item" data-id="15">
+                            <div class="catalog-header__item-title">Чугунные ванны</div>
+                            <div class="catalog-header__item-count">
                                 <span>152</span>товаров
                             </div>
-                            <div class="catalog__item-img">
+                            <div class="catalog-header__item-img">
                                 <img src="img/catalog-item.png" alt="Чугунные ванны">
                             </div>
                         </a>
@@ -421,7 +422,7 @@
                 </form>
             </div>
             <a href="#" class="header__busket">
-                <span>Корзина<i class="count">0</i></span>
+                <span>Корзина<i class="count count__busket">0</i></span>
             </a>
         </div>
     </div>
@@ -838,13 +839,14 @@
         </div>
     </div>
 </footer>
-<!-- <script src="js/jquery-3.6.0.min.js?_v=20220907172427"></script>
-<script src="js/slick.min.js?_v=20220907172427"></script> -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220907172427" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js?_v=20220907172427"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js?_v=20220907172427"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js?_v=20220907172427" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="js/app.js?_v=20220907172427"></script>
+<!-- <script src="js/jquery-3.6.0.min.js?_v=20220914114113"></script>
+<script src="js/slick.min.js?_v=20220914114113"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220914114113" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js?_v=20220914114113"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js?_v=20220914114113"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js?_v=20220914114113" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js?_v=20220914114113"></script>
+<script src="js/app.js?_v=20220914114113"></script>
 </body>
 
 </html>

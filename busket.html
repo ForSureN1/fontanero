@@ -456,68 +456,126 @@
                             <a href="/" class="breadcrumbs__list-link">Главная</a>
                         </li>
                         <li class="breadcrumbs__list-item">
-                            <a href="#" class="breadcrumbs__list-link active">О компании</a>
+                            <a href="#" class="breadcrumbs__list-link active">Корзина</a>
                         </li>
                     </ol>
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="busket">
             <div class="container">
-                <div class="about__container">
-                    <div class="about__img">
-                        <img src="img/about-bg.jpg" alt="Fontanero">
+                <div class="busket__container">
+                    <h2 class="busket__title title">Корзина</h2>
+                    <div class="busket__table">
+                        <div class="busket__table-item">Наименование</div>
+                        <div class="busket__table-item">Цена</div>
+                        <div class="busket__table-item">Кол-во</div>
+                        <div class="busket__table-item">Сумма всего</div>
+                        <div class="busket__table-item">Удалить</div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section class="info">
-            <div class="container">
-                <div class="info__container">
-                    <div class="info__text">
-                        <p>Уважаемые клиенты,добро пожаловать на сайт магазина сантехники "FONTANERO.KZ" Подыскиваете сантехнику для своей квартиры?Вам хотелось бы иметь возможность широкого выбора качественных товаров и доступные цены?У Вас нет времени
-                            разъезжать по магазинам сантехники в поисках компании,которая будет соответствовать всем эти условиям?</p>
-                        <p>В своей деятельности мы ориентированы на интересы и потребности клиента.И наша задача-максимально полно удовлетворить эти потребности.</p>
-                        <p>Мы стремимся к тому,чтобы помочь Вам создать уют и комфорт в ванной комнате или на кухне.И свой успех измеряем тем, насколько наши клиенты остались довольны сотрудничеством.</p>
-                        <p>У нас работают специалисты, знающие своё дело, ежедневная деятельность которых заключается в том, чтобы вы смогли подобрать подходящий вам товар и получить его точно в оговоренный срок.</p>
+                    <div class="busket__items js-cart">
                     </div>
-                    <div class="info__items">
-                        <div class="info__item">
-                            <div class="info__item-img">
-                                <img src="img/benef-1.png" alt="">
+                    <div class="busket__form">
+                        <form action="" class="busket-form">
+                            <div class="busket-form__wrapper">
+                                <div class="busket-form__areas">
+                                    <div class="busket-form__delivery">
+                                        <div class="busket-form__title">Способ доставки</div>
+                                        <div class="busket-form__radios">
+                                            <label for="pickup">
+                                                <input type="radio" name="delivery" id="pickup">
+                                                <span>Самовывоз</span>
+                                            </label>
+                                            <label for="delivery">
+                                                <input type="radio" name="delivery" id="delivery">
+                                                <span>Доставка</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="busket-form__payment">
+                                        <div class="busket-form__title">Способ оплаты</div>
+                                        <div class="busket-form__radios">
+                                            <label for="installment-plan">
+                                        <input type="radio" name="payment" id="installment-plan">
+                                        <span>Оплата в рассрочку</span>
+                                    </label>
+                                            <label for="card">
+                                        <input type="radio" name="payment" id="card">
+                                        <span>Оплата QR или картой</span>
+                                    </label>
+                                            <label for="cash">
+                                        <input type="radio" name="payment" id="cash">
+                                        <span>Оплата наличными</span>
+                                    </label>
+                                        </div>
+                                    </div> -->
+                                    <div class="busket-form__info">
+                                        <div class="busket-form__title">Контактное лицо</div>
+                                        <div class="busket-form__fields">
+                                            <div class="busket-form__col">
+                                                <span>Имя*</span>
+                                                <input type="text" required>
+                                            </div>
+                                            <div class="busket-form__col">
+                                                <span>Фамилия*</span>
+                                                <input type="text" required>
+                                            </div>
+                                            <div class="busket-form__col">
+                                                <span>Телефон*</span>
+                                                <input type="tel" required>
+                                            </div>
+                                            <div class="busket-form__col">
+                                                <span>Город*</span>
+                                                <input type="text" required>
+                                            </div>
+                                            <div class="busket-form__col">
+                                                <span>Адрес*</span>
+                                                <input type="text" required>
+                                            </div>
+                                            <div class="busket-form__col">
+                                                <span>ИИН</span>
+                                                <input type="num">
+                                            </div>
+                                            <div class="busket-form__col area">
+                                                <span>Комментарий к заказу</span>
+                                                <textarea name=""></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="busket-form__order">
+                                    <div class="busket-form__order-title">Ваш заказ</div>
+                                    <div class="busket-form__order-row">
+                                        <span class="name">Сумма заказа</span>
+                                        <span class="total js-cart-total-summa"></span>
+                                    </div>
+                                    <div class="busket-form__order-row">
+                                        <span class="name">Способ доставки </span>
+                                        <span class="deliv"></span>
+                                    </div>
+                                    <a href="#" class="busket-form__link">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_381_2296)">
+                                            <path d="M17.5331 16.0938L14.3135 12.874C14.1545 12.715 14.0754 12.4935 14.0975 12.2697M17.5331 16.0938L14.2219 12.282M17.5331 16.0938L16.0937 17.5332L12.874 14.3135C12.7327 14.1722 12.542 14.0938 12.3438 14.0938C12.3195 14.0938 12.2952 14.0949 12.2709 14.0971L12.2701 14.0972C12.0465 14.1191 11.8444 14.2404 11.7198 14.4276L10.1043 16.8511L7.21268 7.21237L16.8514 10.104L14.4279 11.7195M17.5331 16.0938L14.4972 11.8236M14.0975 12.2697L14.2219 12.282M14.0975 12.2697C14.0975 12.2698 14.0975 12.2698 14.0975 12.2698L14.2219 12.282M14.0975 12.2697C14.1194 12.0464 14.2408 11.8441 14.4279 11.7195M14.2219 12.282C14.2402 12.0959 14.3413 11.9273 14.4972 11.8236M14.4279 11.7195L14.4279 11.7196L14.4972 11.8236M14.4279 11.7195L14.4972 11.8236M10.374 2.87401L9.12401 4.12401C8.97764 4.27039 8.7856 4.34375 8.59375 4.34375C8.40191 4.34375 8.20989 4.2704 8.06352 4.12404L10.374 2.87401ZM10.374 2.87401C10.667 2.58099 10.6671 2.10636 10.374 1.81346M10.374 2.87401L10.374 1.81346M10.374 1.81346C10.081 1.52067 9.6064 1.52039 9.31346 1.81351M10.374 1.81346L9.31346 1.81351M9.31346 1.81351L8.06349 3.06349C7.77048 3.3565 7.77043 3.83111 8.06349 4.12401L9.31346 1.81351ZM9.73268 19.3356L9.73323 19.3357C9.77034 19.3411 9.8073 19.3438 9.84375 19.3438C10.092 19.3438 10.3275 19.2204 10.4681 19.0095L12.4605 16.0209L15.5638 19.1238C15.8567 19.4169 16.3313 19.4169 16.6243 19.1239L19.1243 16.6239C19.1243 16.6239 19.1243 16.6239 19.1243 16.6239C19.4174 16.331 19.4173 15.8563 19.1243 15.5633L16.0214 12.4601L19.0099 10.4676C19.2516 10.3065 19.3788 10.0201 19.3358 9.73263L19.3358 9.73244C19.2925 9.44552 19.0875 9.20857 18.8092 9.12511L6.30958 5.37523C6.30953 5.37521 6.30947 5.3752 6.30942 5.37518C6.04667 5.2955 5.75881 5.36838 5.56357 5.56325L5.56349 5.56333C5.36833 5.75849 5.29612 6.04496 5.37526 6.30901L5.37527 6.30904L9.12526 18.809C9.12527 18.809 9.12527 18.809 9.12527 18.809C9.20873 19.0875 9.44568 19.2925 9.73268 19.3356ZM4.12401 4.12401C4.41702 3.831 4.41707 3.35639 4.12401 3.06349C4.124 3.06348 4.12399 3.06347 4.12399 3.06346L2.87401 1.81349C2.58099 1.52047 2.10636 1.52043 1.81346 1.81351C1.52068 2.10648 1.52039 2.58108 1.81349 2.87401C1.8135 2.87402 1.81351 2.87403 1.81352 2.87404L3.06349 4.12401C3.20986 4.27039 3.4019 4.34375 3.59375 4.34375C3.7856 4.34375 3.97764 4.27039 4.12401 4.12401ZM3.71875 6.09375C3.71875 5.67956 3.38294 5.34375 2.96875 5.34375H1.09375C0.679558 5.34375 0.34375 5.67956 0.34375 6.09375C0.34375 6.50794 0.679558 6.84375 1.09375 6.84375H2.96875C3.38294 6.84375 3.71875 6.50794 3.71875 6.09375ZM2.87401 10.374L4.12401 9.12401C4.41703 8.83099 4.41707 8.35636 4.12399 8.06346C3.83102 7.77068 3.35643 7.77039 3.06349 8.06349C3.06348 8.0635 3.06347 8.06351 3.06346 8.06352L1.81349 9.31349C1.52047 9.60651 1.52043 10.0811 1.81352 10.374C1.95989 10.5204 2.15191 10.5938 2.34375 10.5938C2.5356 10.5938 2.72764 10.5204 2.87401 10.374ZM6.84375 2.96875V1.09375C6.84375 0.679558 6.50794 0.34375 6.09375 0.34375C5.67956 0.34375 5.34375 0.679558 5.34375 1.09375V2.96875C5.34375 3.38294 5.67956 3.71875 6.09375 3.71875C6.50794 3.71875 6.84375 3.38294 6.84375 2.96875Z" fill="#058FF8" stroke="#058FF8" stroke-width="0.25"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_381_2296">
+                                            <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg> Заказать в 1 клик
+                                    </a>
+                                    <input type="submit" class="busket-form__submit" value="Отправить">
+                                    <textarea name="senddata" class="textarea-table" id="textarea" style="display: none;"></textarea>
+                                </div>
                             </div>
-                            <div class="info__item-title">Опыт</div>
+                        </form>
+                    </div>
+                    <div class="empty">
+                        <div class="empty__img">
+                            <img src="img/empty-busket.png" alt="">
                         </div>
-                        <div class="info__item">
-                            <div class="info__item-img">
-                                <img src="img/benef-1.png" alt="">
-                            </div>
-                            <div class="info__item-title">Опыт</div>
-                        </div>
-                        <div class="info__item">
-                            <div class="info__item-img">
-                                <img src="img/benef-1.png" alt="">
-                            </div>
-                            <div class="info__item-title">Опыт</div>
-                        </div>
-                        <div class="info__item">
-                            <div class="info__item-img">
-                                <img src="img/benef-1.png" alt="">
-                            </div>
-                            <div class="info__item-title">Опыт</div>
-                        </div>
-                        <div class="info__item">
-                            <div class="info__item-img">
-                                <img src="img/benef-1.png" alt="">
-                            </div>
-                            <div class="info__item-title">Опыт</div>
-                        </div>
-                        <div class="info__item">
-                            <div class="info__item-img">
-                                <img src="img/benef-1.png" alt="">
-                            </div>
-                            <div class="info__item-title">Опыт</div>
-                        </div>
+                        <div class="empty__title">В Вашей корзине пусто :(</div>
                     </div>
                 </div>
             </div>
@@ -667,3 +725,42 @@
 </body>
 
 </html>
+<!-- 
+<div class="busket__item">
+    <a href="#" class="busket__item-img">
+        <img src="img/pr-1.jpg" alt="">
+    </a>
+    <div class="busket__item-info">
+        <a href="#" class="busket__item-title">Смеситель для умывальника монолитный LEMARK LM 0506 C EVITTA (Чехия)</a>
+        <div class="busket__item-articul">
+            Арт: <span></span>
+        </div>
+    </div>
+    <div class="busket__item-price">25 590 тг</div>
+    <div class="busket__item-counter">
+        <button class="busket__item-decrease">
+            <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.8337 1.83334H0.166992V0.166672H11.8337V1.83334Z" fill="#7E878D"/>
+            </svg>
+        </button>
+        <span class="busket__item-count">1</span>
+        <button class="busket__item-increase">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.83338 0.584218L7.16578 0.584218L7.16578 7.1662L0.583797 7.1662V8.8338L7.16578 8.8338L7.16578 15.4158L8.83338 15.4158L8.83338 8.8338H15.4154V7.1662H8.83338L8.83338 0.584218Z" fill="#333333"/>
+            </svg>
+        </button>
+    </div>
+    <div class="busket__item-total">25 590 тг</div>
+    <a href="javascript:;" class="busket__item-delete">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_375_2922)">
+            <path d="M18.75 20H23.75V22.5H18.75V20ZM18.75 10H27.5V12.5H18.75V10ZM18.75 15H26.25V17.5H18.75V15ZM3.75 22.5C3.75 23.875 4.875 25 6.25 25H13.75C15.125 25 16.25 23.875 16.25 22.5V10H3.75V22.5ZM17.5 6.25H13.75L12.5 5H7.5L6.25 6.25H2.5V8.75H17.5V6.25Z" fill="#7E878D"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_375_2922">
+            <rect width="30" height="30" fill="white"/>
+            </clipPath>
+            </defs>
+        </svg>
+    </a>
+</div> -->
