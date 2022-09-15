@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <title>Главная</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css?_v=20220914114113">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css?_v=20220914114113">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css?_v=20220914114113" />
-    <link rel="stylesheet" href="css/style.css?_v=20220914114113">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css?_v=20220915141706">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css?_v=20220915141706">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css?_v=20220915141706" />
+    <link rel="stylesheet" href="css/style.css?_v=20220915141706">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
     </div>
     <div class="container">
         <div class="header__container">
-            <a href="#" class="header__logo">
+            <a href="/" class="header__logo">
                 <svg width="149" height="88" viewBox="0 0 149 88" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M70.3611 45.5541C53.0265 37.0169 41.0643 43.2905 37.25 47.4944C45.7712 19.6031 74.9869 35.3677 75.7173 35.6102C89.7408 44.7295 105.582 34.3976 111.75 28.0917C110.776 41.431 92.0294 56.2256 70.3611 45.5541Z" fill="#058FF8"/>
                     <path class="right-blob" d="M102.255 18.3904C104.787 25.5694 98.2785 30.4363 94.7076 31.9723C108.098 31.2447 111.75 22.271 113.211 17.6628C114.672 13.0547 112.724 6.26378 106.394 7.96152C101.33 9.3197 101.525 15.48 102.255 18.3904Z" fill="#00C4FF"/>
@@ -421,7 +421,7 @@
                     <button type="submit" class="search-form__submit">Найти</button>
                 </form>
             </div>
-            <a href="#" class="header__busket">
+            <a href="/busket.html" class="header__busket">
                 <span>Корзина<i class="count count__busket">0</i></span>
             </a>
         </div>
@@ -429,10 +429,10 @@
     <nav class="header__nav">
         <div class="container">
             <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="#" class="header__nav-link active">Главная</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">Доставка</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">О компании</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">Карта сайта</a></li>
+                <li class="header__nav-item"><a href="/" class="header__nav-link active">Главная</a></li>
+                <li class="header__nav-item"><a href="/delivery.html" class="header__nav-link">Доставка</a></li>
+                <li class="header__nav-item"><a href="/about.html" class="header__nav-link">О компании</a></li>
+                <li class="header__nav-item"><a href="/map-site.html" class="header__nav-link">Карта сайта</a></li>
             </ul>
         </div>
     </nav>
@@ -595,7 +595,7 @@
                         <div class="catalog__select">
                             <form action="">
                                 <div class="catalog__select-item">
-                                    <select name="" id="">
+                                    <select name="" id="" class="select_send">
                                         <option value="" disabled selected>Сортировка по: </option>
                                         <option value="">Возрастанию цены </option>
                                         <option value="">Убыванию цены </option>
@@ -715,7 +715,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="catalog__item js-product" data-id="4" data-product-name="Смеситель для умывальника монолитный LEMARK LM 0506 C EVITTA (Чехия)" data-product-price="30000" data-product-quantity="3" data-product-img="img/kran-1.jpg" data-product-href="/catalog.html"
+                            <div class="catalog__item js-product" data-id="4" data-product-name="Смеситель для умывальника монолитный LEMARK LM 0506 C EVITTA (Чехия)" data-product-price="30000" data-product-quantity="1" data-product-img="img/kran-1.jpg" data-product-href="/catalog.html"
                                 data-product-articul="10003">
                                 <div class="catalog__item-tag stock">Акция</div>
                                 <a href="#" class="catalog__item-img">
@@ -807,34 +807,7 @@
             </div>
         </section>
     </main>
-    <!-- <div class="popupform js-remove-request-btn">
-    <div class="popupform__block">
-        <div class="popupform__block-close">
-            <img src="img/close.png" alt="">
-        </div>
-        <div class="popupform__block-title">Оставить заявку</div>
-        <form action="">
-            <div class="popupform__block-col">
-                <span>Введите Имя</span>
-                <input type="text">
-            </div>
-            <div class="popupform__block-col">
-                <span>Введите Email</span>
-                <input type="mail">
-            </div>
-            <div class="popupform__block-col">
-                <span>Введите номер телефона</span>
-                <input type="tel">
-            </div>
-            <button type="submit" class="popupform__block-submit green-btn">Отправить 
-                <svg width="29" height="7" viewBox="0 0 29 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M23 1L28 6H23V1Z" fill="white"/>
-                    <path d="M1 6H23M23 6H28L23 1V6Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
-        </form>
-    </div>
-</div> --> <footer class="footer">
+     <footer class="footer">
     <div class="container">
         <div class="footer__container">
             <div class="footer__info">
@@ -940,14 +913,14 @@
         </div>
     </div>
 </footer>
-<!-- <script src="js/jquery-3.6.0.min.js?_v=20220914114113"></script>
-<script src="js/slick.min.js?_v=20220914114113"></script> -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220914114113" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js?_v=20220914114113"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js?_v=20220914114113"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js?_v=20220914114113" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js?_v=20220914114113"></script>
-<script src="js/app.js?_v=20220914114113"></script>
+<!-- <script src="js/jquery-3.6.0.min.js?_v=20220915141706"></script>
+<script src="js/slick.min.js?_v=20220915141706"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220915141706" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js?_v=20220915141706"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js?_v=20220915141706"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js?_v=20220915141706" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js?_v=20220915141706"></script>
+<script src="js/app.js?_v=20220915141706"></script>
 </body>
 
 </html>
